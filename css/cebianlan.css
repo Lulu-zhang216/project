@@ -1,0 +1,391 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.m-indexSideBar {
+    width: 110px;
+    border: 1px solid #E2DED6;
+    left: 50%;
+    margin-left: -680px;
+    z-index: 98;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    will-change: transform;
+    transform: translateZ(0);
+}
+ol, ul {
+    list-style: none;
+}
+.m-indexSideBar .item {
+    width: 108px;
+    height: 36px;
+    padding: 1px 11px 0;
+    text-align: left;
+    position: relative;
+    display: table;
+    cursor: pointer;
+}
+.m-indexSideBar .firstItem {
+    background: url(../img/1.webp) bottom no-repeat;
+    font-size: 16px;
+    color: #BB3343;
+    text-align: center;
+    line-height: 38px;
+    height: 38px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-weight: 700;
+    cursor: default;
+    padding: 0;
+}
+.m-indexSideBar .firstItem:after, .m-indexSideBar .firstItem:before {
+    content: '';
+    display: block;
+    width: 8px;
+    border-bottom: 2px solid #BB3343;
+    position: absolute;
+    bottom: 18px;
+    left: 85px;
+    z-index: 1;
+}
+
+.m-indexSideBar .item:after {
+    content: '';
+    display: block;
+    width: 88px;
+    border-bottom: 1px solid #E2DED6;
+    position: absolute;
+    bottom: -1px;
+    left: 11px;
+    z-index: 1;
+}
+.m-indexSideBar .firstItem:after, .m-indexSideBar .firstItem:before {
+    content: '';
+    display: block;
+    width: 8px;
+    border-bottom: 2px solid #BB3343;
+    position: absolute;
+    bottom: 18px;
+    left: 85px;
+    z-index: 1;
+}.m-indexSideBar .firstItem:before {
+    left: 15px;
+}
+img {
+    vertical-align: top;
+}
+.m-indexSideBar .item .sideIcon {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+}
+.m-indexSideBar .item .name {
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 14px;
+    font-size: 12px;
+    padding-left: 36px;
+    margin-right: 10px;
+}
+.m-indexSideBar .item:hover {
+    color: #BB3343;
+}
+.yx-cp-fixedtool {
+    position: fixed;
+    bottom: 200px;
+    z-index: 99;
+    right: 0;
+    display: none;
+}
+.yx-cp-fixedtool-scrollToFixed .yx-cp-fixedtool {
+    position: absolute;
+}
+.yx-cp-fixedtool .yx-fixedtoolActivityEntry {
+    position: absolute;
+    top: -153px;
+    display: block;
+}
+.yx-cp-base * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.yx-cp-fixedtool-scrollToFixed .yx-fixedtoolActivityEntry {
+    position: initial;
+    margin-bottom: 3px;
+}
+.yx-cp-base img {
+    border: 0;
+    vertical-align: top;
+}
+.yx-cp-fixedtool .yx-fixedtoolActivityEntry .yx-fixedtoolActivityPic {
+    width: 72px;
+}
+.yx-cp-fixedtool .yx-fixedtoolCustomerService, .yx-cp-fixedtool .yx-fixedtoolDownload, .yx-cp-fixedtool .yx-fixedtoolGoTop, .yx-cp-fixedtool .yx-fixedtoolNewuser, .yx-cp-fixedtool .yx-fixedtoolSubscribe {
+    display: block;
+    width: 72px;
+    height: 82px;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 14px;
+    position: relative;
+}
+.yx-cp-fixedtool a.yx-fixedtoolDownload, .yx-cp-fixedtool a.yx-fixedtoolNewuser {
+    text-decoration: none;
+}
+.yx-cp-icon-yxfixedtool{
+	background-image: url(../img/10.png);
+}
+
+.icon-yxfixedtool-newuser {
+    background-position: 0 -363px;
+    height: 29px;
+    width: 28px;
+}
+.yx-cp-base i {
+    font-style: normal;
+}
+.yx-cp-fixedtool .yx-fixedtoolCustomerService p.yx-fixedtoolText, .yx-cp-fixedtool .yx-fixedtoolDownload p.yx-fixedtoolText, .yx-cp-fixedtool .yx-fixedtoolGoTop p.yx-fixedtoolText, .yx-cp-fixedtool .yx-fixedtoolNewuser p.yx-fixedtoolText, .yx-cp-fixedtool .yx-fixedtoolSubscribe p.yx-fixedtoolText {
+    line-height: 20px;
+    font-size: 14px;
+    margin: 8px auto 0;
+    position: relative;
+}
+.icon-yxfixedtool-newuser.newuser-hover, .icon-yxfixedtool-newuser:hover, .yx-cp-fixedtool .yx-fixedtoolNewuser:hover .icon-yxfixedtool-newuser {
+    background-position: 0 -324px;
+}
+.yx-cp-fixedtool .yx-fixedtoolCustomerService p.yx-fixedtoolText:after, .yx-cp-fixedtool .yx-fixedtoolDownload p.yx-fixedtoolText:after, .yx-cp-fixedtool .yx-fixedtoolGoTop p.yx-fixedtoolText:after, .yx-cp-fixedtool .yx-fixedtoolNewuser p.yx-fixedtoolText:after, .yx-cp-fixedtool .yx-fixedtoolSubscribe p.yx-fixedtoolText:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 6px;
+    bottom: -10px;
+    width: 60px;
+    border-bottom: 1px solid #eaeaea;
+}
+.yx-cp-fixedtool .yx-fixedtoolCustomerService:hover, .yx-cp-fixedtool .yx-fixedtoolDownload:hover, .yx-cp-fixedtool .yx-fixedtoolGoTop:hover, .yx-cp-fixedtool .yx-fixedtoolNewuser:hover, .yx-cp-fixedtool .yx-fixedtoolSubscribe:hover {
+    color: #b4a078;
+}
+
+.yx-cp-fixedtool .yx-fixedtoolDownload {
+    height: 140px;
+    padding-top: 0;
+}
+.yx-cp-fixedtool a.yx-fixedtoolDownload, .yx-cp-fixedtool a.yx-fixedtoolNewuser {
+    text-decoration: none;
+}
+.yx-cp-fixedtool .yx-fixedtoolDownload .yx-fixTool-downloadQrcode {
+    height: 64px;
+    margin-bottom: 8px;
+}
+.yx-cp-fixedtool .yx-fixedtoolDownload .yx-fixedtool-downText1 {
+    line-height: 17px;
+    color: #666;
+    font-size: 12px;
+}
+.yx-cp-fixedtool .yx-fixedtoolDownload .yx-fixedtool-downText2 {
+    line-height: 17px;
+    color: #BC3B3B;font-size: 12px;
+}
+.yx-cp-fixedtool .yx-fixedtoolSubscribe {
+    height: 78px;
+    display: none;
+}
+.icon-yxfixedtool-subscribe {
+    background-position: 0 -527px;
+    height: 26px;
+    width: 26px;
+}
+.icon-yxfixedtool-subscribe.subscribe-hover, .icon-yxfixedtool-subscribe:hover, .yx-cp-fixedtool .yx-fixedtoolSubscribe.active .icon-yxfixedtool-subscribe, .yx-cp-fixedtool .yx-fixedtoolSubscribe:hover .icon-yxfixedtool-subscribe {
+    background-position: 0 -455px;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog, .yx-cp-fixedtool .yx-subscribeDialog {
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    right: 62px;
+    top: -68px;
+    cursor: default;
+    line-height: 20px;
+    display: none;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-main, .yx-cp-fixedtool .yx-subscribeDialog .yx-main {
+    width: 370px;
+    height: 220px;
+    background: #FFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 0 2px 4px 0 #7f7f7f;
+    position: relative;
+}
+
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-head, .yx-cp-fixedtool .yx-subscribeDialog .yx-head {
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 26px;
+    color: #FFF;
+    margin-top: -1px;
+    margin-left: -1px;
+}.yx-cp-fixedtool .yx-subscribebg {
+    background:url(../img/2.webp);
+}
+.yx-cp-base .yx-m-pop .yx-w-close, .yx-cp-base .yx-w-button, .yx-cp-icon-common, .yx-cp-icon-exchangeBonus, .yx-cp-icon-yxclose, .yx-cp-icon-yxfixedtool, .yx-cp-icon-yxfoot, .yx-cp-icon-yxmember, .yx-cp-icon-yxnormal, .yx-cp-icon-yxtop {
+    display: -moz-inline-stack;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 12px;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+.yx-cp-icon-yxclose{
+	
+    background-image:url(../img/3.webp);
+}
+.icon-yxclose-close10 {
+    background-position: 0 0;
+    height: 10px;
+    width: 10px;
+background-repeat: no-repeat;
+    
+}
+.yx-cp-fixedtool .yx-subscribeDialog .icon-yxclose-close10 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-desc, .yx-cp-fixedtool .yx-subscribeDialog .yx-desc {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-inputWrap, .yx-cp-fixedtool .yx-subscribeDialog .yx-inputWrap {
+    width: 286px;
+    height: 34px;
+    margin: 10px auto 0;
+    position: relative;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-inputWrap input, .yx-cp-fixedtool .yx-subscribeDialog .yx-inputWrap input {
+    width: 206px;
+    height: 34px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background: #F8F8F8;
+    border: 1px solid #DDD;
+    border-right: none;
+    float: left;
+    outline: 0;
+}.icon-yxfixedtool-clear {
+    background-position: 0 0;
+    height: 14px;
+    width: 14px;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-inputWrap .icon-yxfixedtool-clear, .yx-cp-fixedtool .yx-subscribeDialog .yx-inputWrap .icon-yxfixedtool-clear {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 90px;
+    cursor: pointer;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-inputWrap .yx-submit, .yx-cp-fixedtool .yx-subscribeDialog .yx-inputWrap .yx-submit {
+    width: 80px;
+    height: 34px;
+    background-color: #B4A078;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 34px;
+    cursor: pointer;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-foot, .yx-cp-fixedtool .yx-subscribeDialog .yx-foot {
+    margin-top: 31px;
+    overflow: hidden;
+    line-height: 1;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-foot .yx-privilege, .yx-cp-fixedtool .yx-subscribeDialog .yx-foot .yx-privilege {
+    width: 122px;
+    float: left;
+}
+.icon-yxfixedtool-tag {
+    background-position: 0 -563px;
+    height: 14px;
+    width: 14px;
+}
+.yx-cp-fixedtool .yx-downloadLinkDialog .yx-foot .yx-privilege .yx-text, .yx-cp-fixedtool .yx-subscribeDialog .yx-foot .yx-privilege .yx-text {
+    font-size: 14px;
+    color: #B4A078;
+}
+.icon-yxfixedtool-crown {
+    background-position: 0 -24px;
+    height: 12px;
+    width: 14px;
+}
+.icon-yxfixedtool-sack {
+    background-position: 0 -431px;
+    height: 14px;
+    width: 14px;
+}
+.icon-yxfixedtool-customerService {
+    background-position: 0 -128px;
+    height: 31px;
+    width: 32px;
+}
+.icon-yxfixedtool-customerService.customerService-hover, .icon-yxfixedtool-customerService:hover, .yx-cp-fixedtool .yx-fixedtoolCustomerService:hover .icon-yxfixedtool-customerService {
+    background-position: 0 -46px;
+}
+.yx-cp-fixedtool .yx-fixedtoolGoTop {
+    position: absolute;
+    bottom: -60px;
+    /* display: none; */
+    width: 72px;
+    height: 60px;
+}
+.yx-cp-fixedtool-scrollToFixed .yx-fixedtoolGoTop {
+    bottom: 0;
+    position: relative;
+}
+.yx-cp-fixedtool .yx-fixedtoolGoTop.active {
+    display: block;
+}
+.yx-cp-fixedtool .yx-fixedtoolDownload:after, .yx-cp-fixedtool .yx-fixedtoolGoTop:before {
+    content: '';
+    border-bottom: 1px solid #eaeaea;
+    position: absolute;
+}
+.yx-cp-fixedtool .yx-fixedtoolGoTop:before {
+    display: block;
+    left: 6px;
+    top: 0;
+    width: 60px;
+}
+.icon-yxfixedtool-goTop {
+    background-position: 0 -299px;
+    height: 15px;
+    width: 24px;
+}
+.icon-yxfixedtool-goTop.goTop-hover, .icon-yxfixedtool-goTop:hover, .yx-cp-fixedtool .yx-fixedtoolGoTop:hover .icon-yxfixedtool-goTop {
+    background-position: 0 -249px;
+}
+.yx-cp-fixedtool-scrollToFixed.fixedActive .yx-cp-fixedtool {
+    position: fixed;
+    top: 30px!important;
+}
+.yx-fixedtoolSubscribe:hover .yx-subscribeDialog{
+	display: block;
+}
+.m-indexSideBar.fixed {
+    position: fixed;
+    top: 30px!important;
+}

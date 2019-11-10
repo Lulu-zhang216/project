@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/cebianlanri.css">
+	<script src="../jquery-3.2.1.min (2).js" type="text/javascript" charset="utf-8"></script>
+    <title>侧边右</title>
+</head>
+<body>
+    <div class="yx-cp-fixedtool-scrollToFixed">
+        <div class="yx-cp-base yx-cp-fixedtool j-yx-cp-fixedtool" style="top: 30px; display: block;">
+            <a href="" class="yx-fixedtoolActivityEntry">
+                <img src="./img/1.gif" class="yx-fixedtoolActivityPic"/>
+            </a>
+            <a href="" class="yx-fixedtoolNewuser">
+                <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-newuser">
+                    
+                </i>
+                <p class="yx-fixedtoolText">新人有礼</p>
+            </a>
+            <a href="" class="yx-fixedtoolDownload">
+                <div class="j-yx-fixTool-downloadQrcode yx-fixTool-downloadQrcode">
+                    <!--<canvas id="" style="width: 70px; height: 70px;" width="70" height="70">-->
+                        <img src="./img/011.png"/>
+                    <!--</canvas>-->
+                </div>
+                <p class="yx-fixedtool-downText1">扫码领</p>
+                    <p class="yx-fixedtool-downText2">APP1000元</p>
+                        <p class="yx-fixedtool-downText1">新人礼</p>
+            </a>
+            <div class="yx-fixedtoolSubscribe" style="display: block;">
+                <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-subscribe"></i>
+                <p class="yx-fixedtoolText">订阅电子刊</p>
+                <div class="yx-subscribeDialog j-yx-fixedtoolSubscribeDialog">
+                    <div class="yx-main">
+                        <div class="yx-head yx-subscribebg">
+                            严选生活美学
+                        </div>
+                        <div class="yx-cp-icon-yxclose icon-yxclose-close10 j-yx-subscribeDialogClose">
+                            
+                        </div>
+                        <div class="yx-body">
+                            <div class="yx-desc">
+                                订阅电子刊，第一时间获取严选最新资讯
+                            </div>
+                            <div class="yx-inputWrap">
+                                <input type="" name="" id="" class="j-yx-fixedtoolInput" placeholder="输入您的电子邮件" value="" />
+                                <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-clear j-yx-fixedtoolClear"></i>
+                                <div class="j-yx-fixedtoolSubmit yx-submit">
+                                    立即订阅
+                                </div>
+                            </div>
+                            <div class="yx-foot">
+                                <div class="yx-privilege">
+                                    <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-tag"></i>
+                                    <span class="yx-text">专属优惠</span>
+                                </div>
+                                <div class="yx-privilege">
+                                    <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-crown"></i>
+                                    <span class="yx-text">尊享优先购</span>
+                                </div>
+                                <div class="yx-privilege">
+                                    <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-sack"></i>
+                                    <span class="yx-text">好货不错过</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yx-fixedtoolCustomerService">
+                <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-customerService"></i>
+                <p class="yx-fixedtoolText">在线客服</p>
+            </div>
+            <div class="yx-fixedtoolGoTop">
+                <i class="yx-cp-icon-yxfixedtool icon-yxfixedtool-goTop"></i>
+                <p class="yx-fixedtoolText">回顶部</p>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+$(function(){
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 596) {
+		$(".yx-cp-fixedtool-scrollToFixed").addClass("fixedActive")
+		$(".yx-fixedtoolGoTop").addClass("active")
+		$(".m-indexSideBar").addClass("fixed")
+	} else {
+		$(".yx-cp-fixedtool-scrollToFixed").removeClass("fixedActive")
+		$(".yx-fixedtoolGoTop").removeClass("active")
+		$(".m-indexSideBar").removeClass("fixed")
+	}
+
+    })
+    $(".yx-fixedtoolGoTop").click(function(){
+	$('html , body').animate({scrollTop: 0});
+	})
+})
+</script>
+
+    
+</body>
+
+</html>
